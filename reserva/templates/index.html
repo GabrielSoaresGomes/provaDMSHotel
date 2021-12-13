@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Alugar Hotel</title>
-</head>
-<body>
-  {% for hotel in hoteis %}
-  Hotel: {{ hotel.nomeEstabelecimento }} <br>
-  {% endfor %}
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block navActive01 %} active {% endblock %} {# Aqui é definido qual dos links na nav está ativo #}
+
+{% block content %}
+{% for hotel in hoteis %}
+<ul>
+  <li>Estabelecimento: {{ hotel.nomeEstabelecimento }}</li>
+</ul>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: gray;
+}
+
+nav ul {
+    background-color: gray;
+    padding: 0;
+    margin:0 ;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+nav .active {
+    background-color: rgb(82, 82, 82);
+}
+
+nav .direita {
+    position: absolute;
+    right: 0;
+}
+
+nav li {
+    list-style: none;
+    padding: 8px 4px;
+}
+
+nav li:hover {
+    background-color: lightgray;
+}
+
+nav a {
+    padding: 8px 4px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: black;
+}
+
+
+

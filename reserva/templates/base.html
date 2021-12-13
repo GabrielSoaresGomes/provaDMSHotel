@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivo base</title>
+    <link rel="stylesheet" href="{% static 'nav.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="{% block navActive01 %}{% endblock %}"><a href="{% url 'listarHotel' %}">Home</a></li>
+                <li class="{% block navActive02 %}{% endblock %}"><a href="#">Agendados</a></li>
+                <li class="direita {% block navActive03 %}{% endblock %}"><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

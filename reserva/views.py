@@ -1,3 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .models import Hotel
 
-# Create your views here.
+def listarHotel(request):
+    hoteis = Hotel.objects.all()
+    return render(request, "index.html", {"hoteis": hoteis})

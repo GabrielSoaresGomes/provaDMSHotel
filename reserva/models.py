@@ -8,7 +8,7 @@ class Hotel(models.Model):
         ("CT", "Casa de Temporada"),
     )
 
-    TELEVISAO_CHOICES = (
+    SIM_NAO_CHOICES = (
         ('S', "Sim"),
         ("N", "Não")
     )
@@ -18,5 +18,9 @@ class Hotel(models.Model):
     preco = models.DecimalField("Preço", max_digits=7, decimal_places=2)
     notaAvaliacao = models.DecimalField("Nota de Avaliação", max_digits=3, decimal_places=2) # De 0 a 5 -> ex: 4.5
     qualidadeWifi = models.DecimalField("Qualidade do WIFI", max_digits=3, decimal_places=2) # De 0 a 10 -> ex: 8.9
-    tvCabo = models.CharField("Tem TV a Cabo", max_length=5, choices=TELEVISAO_CHOICES)
+    tvCabo = models.CharField("Tem TV a Cabo", max_length=5, choices=SIM_NAO_CHOICES)
     maximoPessoas = models.SmallIntegerField("Número máximo de pessoas")
+    estaLivre = models.CharField("Está livre", max_length=4, choices=SIM_NAO_CHOICES )
+
+    def __str__(self):
+        return f'{self.nomeEstabelecimento} - {self.cidade}' #Mensagem que aparece no admin

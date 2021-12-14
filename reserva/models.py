@@ -1,7 +1,7 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 
-class Hotel(models.Model):
+class Hospedagem(models.Model):
 
     ESTABELECIMENTO_CHOICES = (
         ("Hotel", "Hotel"),
@@ -25,3 +25,10 @@ class Hotel(models.Model):
 
     def __str__(self):
         return f'{self.nomeEstabelecimento} - {self.cidade}' #Mensagem que aparece no admin
+
+
+class HospedagemReservada(models.Model):
+    nomeHospedagemReservada = models.CharField("", max_length = 60)
+    dataEntrada = models.CharField("Insira a data de entrada no formato ( DD/MM/AAAA ) ", max_length=10)
+    dataSaida = models.CharField("Insira da ta de saída no formato ( DD/MM/AAAA ) ", max_length=10)
+    valorFinal = models.DecimalField("", max_digits = 9, decimal_places = 2)

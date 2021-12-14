@@ -4,6 +4,9 @@ from .forms import ReservarHospedagemForm
 
 def listarHospedagem(request):
     hospedagens = Hospedagem.objects.all()
+    search = request.GET.get('search', '')
+    if search:
+        hospedagens = Hospedagem.objects.filter(nomeEstabelecimento__icontains=search, )
     return render(request, "index.html", {"hospedagens": hospedagens})
 
 def reservarHospedagem(request, id):

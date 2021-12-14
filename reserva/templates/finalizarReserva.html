@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="finalizarReserva">
+    <h2 id="nomeEstabelecimento">{{ hospedagem.nomeEstabelecimento }}</h2>
+    <h3>O preço por dia é de R$<span id="preco">{{ hospedagem.preco }}</span></h3>
+    <h3>Número máximo de pessoas <span id="maximoPessoas">{{ hospedagem.maximoPessoas }}</span></h3>
+    <div class="formularioReservar">
+        <form id="form">
+            {% csrf_token %}
+            {{ formulario }}
+            <button type='button'id="btnCalcular" onclick="calcularHospedagem()">Calcular</button>
+            <button type="submit" style="display: none;" id="btnFinalizar">Finalizar</button>
+        </form>
+    </div>
+    <p id="errorPessoas">O número de Pessoas é maior que o limite</p>
+    <div>O valor final é de R$<span id="valorFinal">0</span></div>
+    <script type="text/javascript" src="../static/js/main.js"></script>
+</div>
+
+{% endblock %}

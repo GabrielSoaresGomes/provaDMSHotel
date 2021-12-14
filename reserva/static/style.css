@@ -20,3 +20,15 @@ div.cadaHospedagem {
 div.cadaHospedagem li {
     list-style: none;
 }
+
+div.finalizarReserva {
+    text-align: center;
+}
+
+div.formularioReservar{
+    margin-top: 20px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: repeat(6, auto );
+}

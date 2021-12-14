@@ -30,5 +30,9 @@ class Hospedagem(models.Model):
 class HospedagemReservada(models.Model):
     nomeHospedagemReservada = models.CharField("", max_length = 60)
     dataEntrada = models.CharField("Insira a data de entrada no formato ( DD/MM/AAAA ) ", max_length=10)
-    dataSaida = models.CharField("Insira da ta de saída no formato ( DD/MM/AAAA ) ", max_length=10)
-    valorFinal = models.DecimalField("", max_digits = 9, decimal_places = 2)
+    numeroDias = models.SmallIntegerField("Insira quantos dias deseja ficar")
+    valorFinal = models.DecimalField("", max_digits=7, decimal_places=2)
+    numeroPessoas = models.SmallIntegerField("Número de pessoas")
+    
+    def __str__(self):    
+        return self.nomeHospedagemReservada

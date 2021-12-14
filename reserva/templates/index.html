@@ -6,7 +6,7 @@
 
 <div class="todasHospedagens">
   {% for hospedagem in hospedagens %}
-  <div class="cadaHospedagem">
+  <div class="cadaHospedagem" onclick = "window.location.href=`{% url 'reservarHospedagem' hospedagem.id %}`">
     <ul>
       <li>Estabelecimento: {{ hospedagem.nomeEstabelecimento }}</li>
       <li>Cidade: {{ hospedagem.cidade }}</li>

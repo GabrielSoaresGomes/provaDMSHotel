@@ -1,0 +1,23 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+<div class="todasHospedagens">
+    {% for hospedagem in hospedagens %}
+    <div class="cadaHospedagem" onclick = "window.location.href=`{% url 'reservarHospedagem' hospedagem.id %}`">
+      <ul>
+        <li>Hospedagem Reservada: {{ hospedagem.nomeHospedagemReservada }}</li>
+        <li>Data de Entrada: {{ hospedagem.dataEntradaw }}</li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+  
+{% endblock content %}
+
+
+
+

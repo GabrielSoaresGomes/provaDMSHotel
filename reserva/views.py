@@ -17,4 +17,4 @@ def reservarHospedagem(request, id):
 def hospedagensReservadas(request):
     hospedagens = HospedagemReservada.objects.all()
 
-    return render(request, "hospedagens.html", {"hospedagens": hospedagens})
+    return render(request, "hospedagensReservadas.html", {"hospedagens": hospedagens})

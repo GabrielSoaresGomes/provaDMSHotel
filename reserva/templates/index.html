@@ -3,9 +3,23 @@
 {% block navActive01 %} active {% endblock %} {# Aqui é definido qual dos links na nav está ativo #}
 
 {% block content %}
-{% for hotel in hoteis %}
-<ul>
-  <li>Estabelecimento: {{ hotel.nomeEstabelecimento }}</li>
-</ul>
-{% endfor %}
+
+<div class="todosHoteis">
+  {% for hotel in hoteis %}
+  <div class="cadaHotel">
+    <ul>
+      <li>Estabelecimento: {{ hotel.nomeEstabelecimento }}</li>
+      <li>Cidade: {{ hotel.cidade }}</li>
+      <li>Tipo de Estabelecimento: {{ hotel.estabelecimento }}</li>
+      <li>Capacidade: {{ hotel.maximoPessoas }} pessoas</li>
+      <li>Possui TV a Cabo? {{ hotel.tvCabo }}</li>
+      <li>Avaliação: {{ hotel.notaAvaliacao }}</li>
+      <li>Qualidade do WIFI: {{ hotel.qualidadeWifi}}</li>
+      <li>Preço por dia: R${{ hotel.preco }}</li>
+      <li>Está disponível? {{ hotel.estaLivre }}</li>
+    </ul>
+  </div>
+  {% endfor %}
+</div>
+
 {% endblock %}

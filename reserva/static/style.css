@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(226, 226, 226);
+}
+
+div.todosHoteis {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+div.cadaHotel {
+    width: 350px;
+    padding: 4px;
+    margin: 4px;
+    border-radius: 8px;
+    background: rgb(108, 138, 138);
+}
+
+div.cadaHotel li {
+    list-style: none;
+}

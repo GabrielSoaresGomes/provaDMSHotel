@@ -8,7 +8,7 @@
 </div>
 <div class="todasHospedagens">
   {% for hospedagem in hospedagens %}
-  <div class="cadaHospedagem" onclick = "window.location.href=`{% url 'reservarHospedagem' hospedagem.id %}`">
+  <div class="cadaHospedagem" onclick = 'reservarHospedagem( {{ hospedagem.id }} )' >
     <ul>
       <li>Estabelecimento: {{ hospedagem.nomeEstabelecimento }}</li>
       <li>Cidade: {{ hospedagem.cidade }}</li>
@@ -18,11 +18,12 @@
       <li>Avaliação: {{ hospedagem.notaAvaliacao }}</li>
       <li>Qualidade do WIFI: {{ hospedagem.qualidadeWifi}}</li>
       <li>Preço por dia: R${{ hospedagem.preco }}</li>
-      <li>Está disponível? {{ hospedagem.estaLivre }}</li>
+      <li>Está disponível? <span id="disponibilidade{{ hospedagem.id }}">{{hospedagem.estaLivre}}</span></li>
     </ul>
+    <p id="naoDisponivel{{ hospedagem.id }}" style="display:none;"> A Hospedagem selecionada não está disponivel</p>
   </div>
   {% endfor %}
-  <!--<script type="text/javascript" src="../static/js/main.js"></script>-->
+  <script type="text/javascript" src="../static/js/index.js"></script>
 </div>
 
 {% endblock %}

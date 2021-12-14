@@ -31,6 +31,7 @@ div.formularioReservar{
 
 div.formularioReservar input {
     display: block;
+    width: 300px;
     margin: auto;
 }
 

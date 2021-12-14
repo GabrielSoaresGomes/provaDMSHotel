@@ -1,15 +1,20 @@
 {% extends 'base.html' %} 
 
+{% block navActive02 %} active {% endblock %} {# Aqui é definido qual dos links na nav está ativo #}
+
 {% block content %}
+<div style='text-align:center; margin-bottom:20px;'>
+    <h1>Hospedagens Reservadas</h1>
+</div>
 <div class="todasHospedagens">
     {% for hospedagem in hospedagens %}
     <div class="cadaHospedagem" onclick = "window.location.href=`{% url 'reservarHospedagem' hospedagem.id %}`">
       <ul>
         <li>Hospedagem Reservada: {{ hospedagem.nomeHospedagemReservada }}</li>
-        <li>Data de Entrada: {{ hospedagem.dataEntradaw }}</li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Data de Entrada: {{ hospedagem.dataEntrada }}</li>
+        <li>Número de hospedes: {{ hospedagem.numeroPessoas }}</li>
+        <li>Reservado por {{ hospedagem.numeroDias }}</li>
+        <li>Valor final: R${{ hospedagem.valorFinal }}</li>
 
       </ul>
     </div>

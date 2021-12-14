@@ -14,7 +14,7 @@
         <nav>
             <ul>
                 <li class="{% block navActive01 %}{% endblock %}"><a href="{% url 'listarHospedagem' %}">Home</a></li>
-                <li class="{% block navActive02 %}{% endblock %}"><a href="#">Agendados</a></li>
+                <li class="{% block navActive02 %}{% endblock %}"><a href="{% url 'hospedagensReservadas' %}">Agendados</a></li>
                 <li class="direita {% block navActive03 %}{% endblock %}"><a href="#">Logout</a></li>
             </ul>
         </nav>

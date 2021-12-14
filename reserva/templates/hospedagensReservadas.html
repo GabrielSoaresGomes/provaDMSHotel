@@ -8,12 +8,12 @@
 </div>
 <div class="todasHospedagens">
     {% for hospedagem in hospedagens %}
-    <div class="cadaHospedagem" onclick = "window.location.href=`{% url 'reservarHospedagem' hospedagem.id %}`">
+    <div class="cadaHospedagem">
       <ul>
         <li>Hospedagem Reservada: {{ hospedagem.nomeHospedagemReservada }}</li>
         <li>Data de Entrada: {{ hospedagem.dataEntrada }}</li>
         <li>Número de hospedes: {{ hospedagem.numeroPessoas }}</li>
-        <li>Reservado por {{ hospedagem.numeroDias }}</li>
+        <li>Reservado por {{ hospedagem.numeroDias }} dias</li>
         <li>Valor final: R${{ hospedagem.valorFinal }}</li>
 
       </ul>

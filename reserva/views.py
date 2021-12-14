@@ -8,9 +8,11 @@ def listarHospedagem(request):
 
 def reservarHospedagem(request, id):
     hospedagem = Hospedagem.objects.get(id=id)
+    hospedagem.estaLivre = "Não"
     formulario = ReservarHospedagemForm(request.POST or None)
     if formulario.is_valid():
         formulario.save()
+        hospedagem.save()
         return redirect('hospedagensReservadas')
     return render(request, 'finalizarReserva.html', {"formulario": formulario, "hospedagem": hospedagem})
 
@@ -18,3 +20,4 @@ def hospedagensReservadas(request):
     hospedagens = HospedagemReservada.objects.all()
 
     return render(request, "hospedagensReservadas.html", {"hospedagens": hospedagens})
+

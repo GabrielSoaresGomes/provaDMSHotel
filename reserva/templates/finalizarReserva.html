@@ -6,7 +6,7 @@
     <h3>O preço por dia é de R$<span id="preco">{{ hospedagem.preco }}</span></h3>
     <h3>Número máximo de pessoas <span id="maximoPessoas">{{ hospedagem.maximoPessoas }}</span></h3>
     <div class="formularioReservar">
-        <form id="form">
+        <form id="form" action="{% url 'reservarHospedagem' hospedagem.id%}">
             {% csrf_token %}
             {{ formulario }}
             <button type='button'id="btnCalcular" onclick="calcularHospedagem()">Calcular</button>
@@ -16,6 +16,6 @@
     <p id="errorPessoas">O número de Pessoas é maior que o limite</p>
     <div>O valor final é de R$<span id="valorFinal">0</span></div>
     <script type="text/javascript" src="../static/js/main.js"></script>
-</div>
+</div >
 
 {% endblock %}

@@ -1,6 +1,9 @@
+
 document.getElementById('id_valorFinal').style.display = "none"
 document.getElementById('id_nomeHospedagemReservada').style.display = "none"
 document.getElementById('errorPessoas').style.display = "none"
+document.getElementById("id_dataEntrada").setAttribute("input")
+
 
 function calcularHospedagem() {
     maximoPessoas = parseInt(document.getElementById("maximoPessoas").innerHTML)

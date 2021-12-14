@@ -3,7 +3,9 @@
 {% block navActive01 %} active {% endblock %} {# Aqui é definido qual dos links na nav está ativo #}
 
 {% block content %}
-
+<div style='text-align:center; margin-bottom:20px;'>
+  <h1>Hospedagens</h1>
+</div>
 <div class="todasHospedagens">
   {% for hospedagem in hospedagens %}
   <div class="cadaHospedagem" onclick = "window.location.href=`{% url 'reservarHospedagem' hospedagem.id %}`">
@@ -20,6 +22,7 @@
     </ul>
   </div>
   {% endfor %}
+  <!--<script type="text/javascript" src="../static/js/main.js"></script>-->
 </div>
 
 {% endblock %}

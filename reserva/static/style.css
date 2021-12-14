@@ -27,8 +27,13 @@ div.finalizarReserva {
 
 div.formularioReservar{
     margin-top: 20px;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 200px;
-    grid-template-rows: repeat(6, auto );
+}
+
+div.formularioReservar input {
+    display: block;
+    margin: auto;
+}
+
+.errorlist li {
+    list-style: none;
 }

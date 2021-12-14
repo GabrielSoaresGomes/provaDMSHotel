@@ -4,19 +4,19 @@
 
 {% block content %}
 
-<div class="todosHoteis">
-  {% for hotel in hoteis %}
-  <div class="cadaHotel">
+<div class="todasHospedagens">
+  {% for hospedagem in hospedagens %}
+  <div class="cadaHospedagem">
     <ul>
-      <li>Estabelecimento: {{ hotel.nomeEstabelecimento }}</li>
-      <li>Cidade: {{ hotel.cidade }}</li>
-      <li>Tipo de Estabelecimento: {{ hotel.estabelecimento }}</li>
-      <li>Capacidade: {{ hotel.maximoPessoas }} pessoas</li>
-      <li>Possui TV a Cabo? {{ hotel.tvCabo }}</li>
-      <li>Avaliação: {{ hotel.notaAvaliacao }}</li>
-      <li>Qualidade do WIFI: {{ hotel.qualidadeWifi}}</li>
-      <li>Preço por dia: R${{ hotel.preco }}</li>
-      <li>Está disponível? {{ hotel.estaLivre }}</li>
+      <li>Estabelecimento: {{ hospedagem.nomeEstabelecimento }}</li>
+      <li>Cidade: {{ hospedagem.cidade }}</li>
+      <li>Tipo de Estabelecimento: {{ hospedagem.estabelecimento }}</li>
+      <li>Capacidade: {{ hospedagem.maximoPessoas }} pessoas</li>
+      <li>Possui TV a Cabo? {{ hospedagem.tvCabo }}</li>
+      <li>Avaliação: {{ hospedagem.notaAvaliacao }}</li>
+      <li>Qualidade do WIFI: {{ hospedagem.qualidadeWifi}}</li>
+      <li>Preço por dia: R${{ hospedagem.preco }}</li>
+      <li>Está disponível? {{ hospedagem.estaLivre }}</li>
     </ul>
   </div>
   {% endfor %}

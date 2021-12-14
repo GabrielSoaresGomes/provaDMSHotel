@@ -2,14 +2,14 @@ body {
     background-color: rgb(226, 226, 226);
 }
 
-div.todosHoteis {
+div.todasHospedagens {
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     flex-wrap: wrap;
 }
 
-div.cadaHotel {
+div.cadaHospedagem {
     width: 350px;
     padding: 4px;
     margin: 4px;
@@ -17,6 +17,6 @@ div.cadaHotel {
     background: rgb(108, 138, 138);
 }
 
-div.cadaHotel li {
+div.cadaHospedagem li {
     list-style: none;
 }

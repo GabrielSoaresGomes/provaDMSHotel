@@ -1,0 +1,153 @@
+[
+  {
+    "model": "sessions.session",
+    "pk": "7am5o07saf4zt4uyctqowq9p09oy7qu2",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSFAgQGX7v0GMsNDqgaS0q6M_65NutDtPefcFwu4rTVsIy9hTuzMFDv9boTxkdsO0h3brfPY27rMxHeFH3Twa0_5eTncv4OKo35rEk6RLZYsAEhFGWwGQNBRGq8cCqvJlMn74rX0WSpRop_IATqTStTs_QHLKzdk:1mxHtJ:n6yvpTdwx5dKB_17owF-4w8FrJ2vWRpc86K0ZnOH9Kk",
+      "expire_date": "2021-12-29T00:11:29.084Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "pe53y5b75k3xf4ioypxalo5f6g3hjlki",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSFAgQGX7v0GMsNDqgaS0q6M_65NutDtPefcFwu4rTVsIy9hTuzMFDv9boTxkdsO0h3brfPY27rMxHeFH3Twa0_5eTncv4OKo35rEk6RLZYsAEhFGWwGQNBRGq8cCqvJlMn74rX0WSpRop_IATqTStTs_QHLKzdk:1mxIm3:I3B8LMetLRQi6LPTH7vF4IAdmJRBLwgcn4Ub-qYwlT0",
+      "expire_date": "2021-12-29T01:08:03.312Z"
+    }
+  },
+  {
+    "model": "reserva.hospedagem",
+    "pk": 1,
+    "fields": {
+      "estabelecimento": "Hotel",
+      "cidade": "Vassouras",
+      "nomeEstabelecimento": "Hotel Barão Santa Mônica",
+      "preco": "230.00",
+      "notaAvaliacao": "4.5",
+      "qualidadeWifi": "9.8",
+      "tvCabo": "Sim",
+      "maximoPessoas": 12,
+      "estaLivre": "Não"
+    }
+  },
+  {
+    "model": "reserva.hospedagem",
+    "pk": 2,
+    "fields": {
+      "estabelecimento": "Pousada",
+      "cidade": "Piúma",
+      "nomeEstabelecimento": "Pousada Estrela do Mar Estranho",
+      "preco": "123.00",
+      "notaAvaliacao": "4.9",
+      "qualidadeWifi": "8.8",
+      "tvCabo": "Não",
+      "maximoPessoas": 4,
+      "estaLivre": "Sim"
+    }
+  },
+  {
+    "model": "reserva.hospedagem",
+    "pk": 3,
+    "fields": {
+      "estabelecimento": "Hotel",
+      "cidade": "Juparanã",
+      "nomeEstabelecimento": "Hotel Vasconcelos",
+      "preco": "1230.00",
+      "notaAvaliacao": "4.5",
+      "qualidadeWifi": "8.9",
+      "tvCabo": "Sim",
+      "maximoPessoas": 12,
+      "estaLivre": "Sim"
+    }
+  },
+  {
+    "model": "reserva.hospedagem",
+    "pk": 4,
+    "fields": {
+      "estabelecimento": "Casa de Temporada",
+      "cidade": "Barra do Piraí",
+      "nomeEstabelecimento": "Casa Sol de Verão",
+      "preco": "140.00",
+      "notaAvaliacao": "5.0",
+      "qualidadeWifi": "8.8",
+      "tvCabo": "Não",
+      "maximoPessoas": 2,
+      "estaLivre": "Sim"
+    }
+  },
+  {
+    "model": "reserva.hospedagem",
+    "pk": 5,
+    "fields": {
+      "estabelecimento": "Hotel",
+      "cidade": "Barra do Piraí",
+      "nomeEstabelecimento": "Hotel Pernambucano",
+      "preco": "198.00",
+      "notaAvaliacao": "4.5",
+      "qualidadeWifi": "8.9",
+      "tvCabo": "Não",
+      "maximoPessoas": 5,
+      "estaLivre": "Sim"
+    }
+  },
+  {
+    "model": "reserva.hospedagem",
+    "pk": 6,
+    "fields": {
+      "estabelecimento": "Hotel",
+      "cidade": "Paracambi",
+      "nomeEstabelecimento": "Hotel Santo Agostinho",
+      "preco": "230.00",
+      "notaAvaliacao": "4.5",
+      "qualidadeWifi": "9.8",
+      "tvCabo": "Sim",
+      "maximoPessoas": 7,
+      "estaLivre": "Sim"
+    }
+  },
+  {
+    "model": "reserva.hospedagem",
+    "pk": 7,
+    "fields": {
+      "estabelecimento": "Pousada",
+      "cidade": "Piúma",
+      "nomeEstabelecimento": "Pousada Sol e Mar",
+      "preco": "123.00",
+      "notaAvaliacao": "4.9",
+      "qualidadeWifi": "8.8",
+      "tvCabo": "Não",
+      "maximoPessoas": 4,
+      "estaLivre": "Sim"
+    }
+  },
+  {
+    "model": "reserva.hospedagem",
+    "pk": 8,
+    "fields": {
+      "estabelecimento": "Hotel",
+      "cidade": "Valença",
+      "nomeEstabelecimento": "Hotel Valencianos",
+      "preco": "230.00",
+      "notaAvaliacao": "4.5",
+      "qualidadeWifi": "9.8",
+      "tvCabo": "Sim",
+      "maximoPessoas": 12,
+      "estaLivre": "Não"
+    }
+  },
+  {
+    "model": "reserva.hospedagem",
+    "pk": 9,
+    "fields": {
+      "estabelecimento": "Pousada",
+      "cidade": "Paracambi",
+      "nomeEstabelecimento": "Pousada Estrela do Mar Estranho",
+      "preco": "123.00",
+      "notaAvaliacao": "4.9",
+      "qualidadeWifi": "8.8",
+      "tvCabo": "Não",
+      "maximoPessoas": 4,
+      "estaLivre": "Sim"
+    }
+  }
+]

@@ -36,3 +36,5 @@ Ele irá rodar o arquivo json que contêm o comando sql que irá gerar a table.
 Não consegui utilizar ddl para gerar o banco, e por isso usei esse arquivo json, mas deve ter o postgres configurado em sua máquina.
 
 Esse comando do json cria a table, porém deve ter uma conexão com o postgres.
+
+Na parte de buscar pelas hospedagens, só consegui realizar a busca pelo nome do estabelecimento.
